@@ -2,7 +2,7 @@ import Vapor
 
 func routes(_ app: Application) throws {
     guard let username = Environment.process.DEXCOM_USERNAME, let password = Environment.process.DEXCOM_PASSWORD else {
-        throw NSError()
+        throw Abort(.notImplemented)
     }
     
     let outsideUS = Environment.process.OUTSIDE_US != nil
