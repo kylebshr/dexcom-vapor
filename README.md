@@ -28,7 +28,7 @@ Run `fly-launch` from the root of the repo to create a new fly app and deploy it
 
 Set the username and password environment variables using your _normal_ dexcom account details - _not_ the accout you’re sharing with. If your user ID is your phone number, sadly the API does not work. You can create a new Dexcom account with your email to use the API.
 
-`fly secrets set DEXCOM_USERNAME=dexcom@email.com DEXCOM_PASSWORD=reallystrongpassword`
+`fly secrets set DEXCOM_USERNAME=youremail@example.com DEXCOM_PASSWORD=reallystrongpassword`
 
 Fly will restart the service, and it should start working.
 
