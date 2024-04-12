@@ -1,9 +1,8 @@
-# fly.toml app configuration file generated for dexcom-vapor on 2024-04-10T18:12:55-07:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'dexcom-vapor'
+app = 'dexcom-next'
 primary_region = 'sea'
 
 [build]
@@ -17,6 +16,6 @@ primary_region = 'sea'
   processes = ['app']
 
 [[vm]]
-  memory = '1gb'
+  memory = '256mb'
   cpu_kind = 'shared'
   cpus = 1
